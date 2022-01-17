@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>test</p>
+    <button id = "btn">클릭!</button>
+    <script>
+     
+        // html 페이지에 출력
+        document.write("안녕하세요!!!");
+        // event를 통해서 촐력했을 경우 웹페이지 구성이 바뀐다.
+        document.querySelector("#btn").addEventListener("click",function(){
+            document.write("안녕하세요!!!");
+        })
+        // web 콘솔에 출력
+        // 가장 많이 사용
+        console.log("안녕하세요!!!");
+        // 팝업 알림창으로 출력, 실행 순서가 맨 첫번째 이다..
+        // 화면 전환 체크 또는 데이터 통신 성공 여부를 확인할 때 많이 사용
+        alert("안녕하세요!!!");
+    </script>    
+</body>
+</html>
