@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numArray = [];
+        for (let i = 0 ; i < 10; i++){
+            numArray[i] = parseInt(100*Math.random())+1;
+        }
+        console.log(numArray);
+        for (let i = 0 ; i < numArray.length; i++){
+            if (numArray[i]%2 == 0){
+                numArray.splice(i,1);
+                i--;
+            } 
+        }
+
+        console.log("numArray에 남아 있는 수는 "+numArray+"이며 총 "+numArray.length+"개 입니다.");
+    </script>
+</body>
+</html>
