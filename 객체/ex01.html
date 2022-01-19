@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 객체생성
+        let phone = {
+            number :'0123456789',
+            name :'lollipop',
+            call : function(){
+                console.log("calling")
+            },
+            send : function(){
+                console.log("sending")
+            },
+        };
+        console.log(phone.number);
+        phone.send();
+        // 겍체에 데어터 추가
+        phone.price = "1,000,000";
+        console.log(phone);
+    </script>
+</body>
+</html>

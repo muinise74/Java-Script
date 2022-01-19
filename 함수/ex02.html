@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 호이스팅 현상을 막기 위해 함수 표현식 사용
+        // 함수 표현식 사용시 함수명 생략 가능
+        // 변수명을 함수명처럼 사용 가능
+        const add =function (num1, num2){
+            return num1+num2;
+        }
+
+        let a = parseInt(prompt("첫 번째 정수 입력 "));
+        let b = parseInt(prompt("두 번째 정수 입력 "));
+        let result = a+b;
+        console.log("더하기 결과 : "+result);
+    </script>
+</body>
+</html>

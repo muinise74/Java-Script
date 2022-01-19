@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name : '홍길동',
+            age : 25
+        };
+
+        person.gender = '남';
+        person.address = '조선';
+        person.favMovies = ['쏘우3D','Splice'];
+        person.favFood = ['쑥갓','인삼'];
+        person.greeting = function() {
+            let str = person.name +"님의 나이는 "+person.age+"이고 성별은 "+person.gender+"입니다.\r\n"
+            +"사는 곳은 "+person.address+"이고 좋아하는 영화는 "+person.favMovies.join(',')+"등이 있습니다.\r\n"
+            +"좋아하는 음식은 "+person.favFood.join(',')+"입니다."
+            console.log(str)
+        };
+        person.greeting();
+    </script>
+</body>
+</html>
