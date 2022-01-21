@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button onclick = 'add1()'>+1 증가</button>
+    <button onclick = 'sub1()'>-1 감소</button>
+    <button onclick = 'double()'>2배</button>
+    <button onclick = 'half()'>절반</button>
+    <button onclick = 'pow()'>제곱</button>
+
+    <script>
+
+        let h1 = document.getElementsByTagName('h1')[0];
+        let num = Number(h1.innerText);
+    
+        function add1(){
+            num += 1;
+            h1.innerText = num;
+        };
+
+        function sub1(){
+            if (num > 0) {
+                num -= 1;
+                h1.innerText = num;
+            }
+        };
+
+        function double(){
+            num *= 2;
+            h1.innerText = num;
+        };
+
+        function half(){
+            num /= 2;
+            h1.innerText = num;
+        };
+
+        function pow(){
+            num = num*num;
+            h1.innerText = num;
+        };
+    </script>
+</body>
+</html>

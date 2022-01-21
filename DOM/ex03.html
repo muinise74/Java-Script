@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>사과</li>
+        <li>메론</li>
+        <li>파인애플</li>
+    </ul> 
+
+    <script>
+        // li 태그를 가져와서 각각의 색에 맞게 글자 색 변경
+        let fruit = document.getElementsByTagName("li");
+        fruit[0].style.color='red';
+        fruit[1].style.color='green';
+        fruit[2].style.color='yellow';
+    </script>
+</body>
+</html>
