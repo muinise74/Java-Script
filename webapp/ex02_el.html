@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>회원 가입 폼</h1>
+	<form action = "ex02_el.jsp" method = 'post'>
+		<table border = "1px">
+			<tr>
+				<td>ID</td>
+				<td><input type = 'text' name = 'id'></td>
+			</tr>
+			<tr>
+				<td>PW</td>
+				<td><input type = 'password' name = 'pw'></td>
+			</tr>
+			<tr>
+				<td>NAME</td>
+				<td><input type = 'text' name = 'name'></td>
+			</tr>
+			<tr>
+				<td>EMAIL</td>
+				<td><input type = 'text' name = 'email'></td>
+			</tr>
+			<tr>
+				<td>HOBBY</td>
+				<td>
+					코딩<input type = 'checkbox' name = 'hobby' value ='코딩'>
+					게임<input type = 'checkbox' name = 'hobby' value ='게임'>
+				</td>
+			</tr>
+			<tr align = 'center'>
+				<td colspan = "2"><input type = "submit" value = 'Join'></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
