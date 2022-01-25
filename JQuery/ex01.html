@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='jquery-3.6.0.min.js'></script>
+</head>
+<body>
+    <h1 id = 'text1'>내일은 드디어 토요일!!!!</h1>
+    
+    <script>
+        let h1 = document.getElementById('text1');
+        h1.style.color='red';
+
+        // 웹페이지를 구성하는 요소(태그)를
+        // JQuery의 객체로 가져와 주세요
+        // $('선택자')
+        $("h1").css('color',"green");
+
+        // h1 태그 내용 바꾸기
+        $("h1").text("모레도 토요일 이었으면....");
+        //$("h1").html("<a href = '#'>모레도 토요일 이었으면....</a>");
+
+        // 글씨 크기를 200px 배경 orage
+        // $("h1").css("font-size",'200px');
+        // $("h1").css('backgroundColor','orange');
+
+        // 딕셔너리(?) 형태로 입력 가능
+        let dic = {"font-size":"200px","backgroundColor":"orange"};
+        $("h1").css(dic);
+
+    </script>
+</body>
+</html>

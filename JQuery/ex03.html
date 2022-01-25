@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: black;
+            color : yellow;
+            font-size: 25px;
+        }
+    </style>
+    <script src = 'jquery-3.6.0.min.js'></script>
+</head>
+<body>
+    <h1>this 사용해보기 </h1>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <p>눌렀을 때, 나만 텍스트를 출력해주세요.</p>
+    <script>
+        $("p").on("click",function(){
+            $(this).text("나만 클릭했네요!");
+            $(this).css({
+                "background-color":"yellow",
+                "color":"black"
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jquery-3.6.0.min.js"></script>
+    <link rel='stylesheet' href="moveImgStyle.css">
+</head>
+<body>
+    <div id = 'bg'>
+        <img src='horse.png'>
+        <button class="btn left">Left</button>
+        <button class ='btn right'>Right</button>
+    </div>
+    
+    <script>
+        $("button.left").on("click",function(){
+            var num1 = parseInt($("img").css("right").replace("px",""));
+            num1 += 11;
+            if (num1 <= 1210){
+                $("img").css("right",num1);
+            } else {
+                num1 = 1210;
+                $("img").css("right",num1);
+            };
+        });
+
+        $("button.right").on("click",function(){
+            var num2 = parseInt($("img").css("right").replace("px",""));
+            num2 -= 11;
+            if (num2 >= 0) {
+                $("img").css("right",num2);
+            } else {
+                num2 = 0;
+                $("img").css("right",num2);
+            };
+        });
+    </script>
+</body>
+</html>
